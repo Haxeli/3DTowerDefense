@@ -12230,6 +12230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 930680016507248545, guid: 94fdf3ccbe3b2a8479f6508153082a20, type: 3}
+  spawnPoint: {fileID: 342696634}
   timeBetweenWaves: 5
 --- !u!4 &1741696981
 Transform:

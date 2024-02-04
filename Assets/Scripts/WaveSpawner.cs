@@ -9,6 +9,7 @@ public class WaveSpawner : MonoBehaviour
 
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
+    public float timeBetweenEnemySpawns = 0.5f;
 
     private int waveNumber = 1;
     private void Update()
@@ -22,11 +23,12 @@ public class WaveSpawner : MonoBehaviour
         countdown -= Time.deltaTime;
     }
 
-    void SpawnWave()
+    IEnumerator SpawnWave()
     {
         for (int i = 0; i < waveNumber; i++)
         {
             SpawnEnemy();
+            yield return new WaitForSeconds(timeBetweenEnemySpawns);
         }
         waveNumber++;
     }
