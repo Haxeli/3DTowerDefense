@@ -8,6 +8,7 @@ public class Turret : MonoBehaviour
     public float range = 15f;
     public string enemyTag = "Enemy";
     public Transform partToRotate;
+    public float turnSpeed = 10f;
 
     private void Start()
     {
@@ -43,9 +44,10 @@ public class Turret : MonoBehaviour
     {
         if (target == null) return;
 
+        //Lock on target
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = lookRotation.eulerAngles;
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
