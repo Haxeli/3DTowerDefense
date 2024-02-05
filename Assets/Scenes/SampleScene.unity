@@ -4072,6 +4072,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8837365301547710019, guid: eabaf7e771b490e45b38f6f3e03ac8d3, type: 3}
   m_PrefabInstance: {fileID: 576226950}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &581215740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2360673730594686916, guid: 8369a82ad7b8e714ba36928ab3f9b6c8, type: 3}
+  m_PrefabInstance: {fileID: 5754197161156618771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &589445465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15451,6 +15456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5983a26492e9744b8e73d12c76928b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  range: 15
+  enemyTag: Enemy
+  partToRotate: {fileID: 581215740}
 --- !u!1001 &4784090616493887339
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,6 +7,7 @@ public class Turret : MonoBehaviour
     private Transform target;
     public float range = 15f;
     public string enemyTag = "Enemy";
+    public Transform partToRotate;
 
     private void Start()
     {
@@ -41,6 +42,11 @@ public class Turret : MonoBehaviour
     private void Update()
     {
         if (target == null) return;
+
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = lookRotation.eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     private void OnDrawGizmosSelected()
