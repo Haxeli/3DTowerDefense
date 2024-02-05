@@ -4,3 +4,5 @@
 ## Current features
 - 1 prototype level
 - Enemies follow waypoints
+- Available turret
+- Turret locks on to the nearest enemy within range
