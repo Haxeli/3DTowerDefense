@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float range = 15f;
     public string enemyTag = "Enemy";
 
@@ -32,6 +32,9 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+        } else
+        {
+            target = null;
         }
     }
 
