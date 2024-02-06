@@ -9,6 +9,9 @@ public class Turret : MonoBehaviour
     public string enemyTag = "Enemy";
     public Transform partToRotate;
     public float turnSpeed = 10f;
+    //Turret shooting
+    public float firerate = 1f;
+    private float fireCountDown = 0f;
 
     private void Start()
     {
@@ -49,6 +52,19 @@ public class Turret : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+
+        if (fireCountDown <= 0f)
+        {
+            Shoot();
+            fireCountDown = 1f / firerate;
+        }
+
+        fireCountDown -= Time.deltaTime;
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Shoot!");
     }
 
     private void OnDrawGizmosSelected()
