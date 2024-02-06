@@ -6,3 +6,4 @@
 - Enemies follow waypoints
 - Available turret
 - Turret locks on to the nearest enemy within range
+- Turret automatically shoots bullets at enemy
