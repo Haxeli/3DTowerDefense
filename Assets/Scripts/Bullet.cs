@@ -12,6 +12,10 @@ public class Bullet : MonoBehaviour
     }
     void Update()
     {
-        
+        if (target == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 }
