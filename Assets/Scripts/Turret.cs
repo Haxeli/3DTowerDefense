@@ -5,13 +5,14 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    [Header("Attributes")]
     public float range = 15f;
+    public float firerate = 1f;
+    private float fireCountDown = 0f;
+    [Header("Setup fields")]
     public string enemyTag = "Enemy";
     public Transform partToRotate;
     public float turnSpeed = 10f;
-    //Turret shooting
-    public float firerate = 1f;
-    private float fireCountDown = 0f;
 
     private void Start()
     {
