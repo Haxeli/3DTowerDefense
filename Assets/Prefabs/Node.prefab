@@ -118,3 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176e61fb82a9930468ed1b95e40d3002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hoverColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
