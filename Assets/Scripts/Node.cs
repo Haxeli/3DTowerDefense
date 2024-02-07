@@ -18,7 +18,11 @@ public class Node : MonoBehaviour
         if (turret != null)
         {
             Debug.Log("Can't build there");
+            return;
         }
+
+        //Build a turret
+
     }
 
     private void OnMouseEnter()
