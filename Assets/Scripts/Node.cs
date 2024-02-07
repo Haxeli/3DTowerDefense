@@ -6,6 +6,7 @@ public class Node : MonoBehaviour
     private Renderer rend;
     private Color startColor;
     private GameObject turret;
+    public Vector3 positionOffset;
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class Node : MonoBehaviour
         }
 
         GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position, transform.rotation);
+        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
 
     }
 
