@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float panSpeed = 30f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey("w"){
+            transform.Translate(Vector3.forward);
+        }
     }
 }
