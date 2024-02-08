@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    private bool doMovement = true;
+
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape)) doMovement = !doMovement;
+        if (!doMovement) return;
         if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y >= Screen.height - panBorderThickness)
         {
             transform.Translate(panSpeed * Time.deltaTime * Vector3.forward, Space.World);
