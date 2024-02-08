@@ -8,8 +8,9 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("w"){
-            transform.Translate(Vector3.forward);
+        if (Input.GetKey("w"))
+        {
+            transform.Translate(Vector3.forward * panSpeed * Time.deltaTime);
         }
     }
 }
