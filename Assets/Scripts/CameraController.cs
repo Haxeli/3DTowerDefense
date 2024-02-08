@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKey("w"))
         {
-            transform.Translate(Vector3.forward * panSpeed * Time.deltaTime);
+            transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
     }
 }
