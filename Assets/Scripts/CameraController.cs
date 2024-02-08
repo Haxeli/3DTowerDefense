@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    //For future advanced camera: https://forum.unity.com/threads/rts-camera-script.72045/
+
     private bool doMovement = true;
 
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
+    public float scrollSpeed = 5f;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) doMovement = !doMovement;
         if (!doMovement) return;
+
         if (Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow) || Input.mousePosition.y >= Screen.height - panBorderThickness)
         {
             transform.Translate(panSpeed * Time.deltaTime * Vector3.forward, Space.World);
@@ -29,6 +33,12 @@ public class CameraController : MonoBehaviour
         {
             transform.Translate(panSpeed * Time.deltaTime * Vector3.left, Space.World);
         }
+
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+
+        Vector3 pos = transform.position;
+        pos.y -= scroll * 2000 * scrollSpeed * Time.deltaTime;
+        transform.position = pos;
     }
 }
 
