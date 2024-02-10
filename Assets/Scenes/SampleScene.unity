@@ -7212,7 +7212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178498815437886958, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AnotherStandardTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 5178498815437886958, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -7223,16 +7223,20 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 03242798dc681614ebe6ceb6846bc9f3, type: 3}
+    - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.g
-      value: 0.636843
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.r
-      value: 0.3915094
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5957947826943357641, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Pivot.x
@@ -7316,7 +7320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283706371154283986, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem (1)
+      value: MissileLauncherItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8573,63 +8577,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1186239890
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3150226524399552052, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_Name
-      value: StandardTurret
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8541024529575698917, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 261e8184c46c70845b81e209a869728c, type: 3}
 --- !u!1001 &1190501068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13093,7 +13040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 3150226524399552052, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-  anotherTurretPrefab: {fileID: 3150226524399552052, guid: 4de84845e7786fa4baf4a23a6a1e15a6, type: 3}
+  missileLauncherPrefab: {fileID: 2871611967064286869, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
 --- !u!1001 &1753587170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16498,63 +16445,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eabaf7e771b490e45b38f6f3e03ac8d3, type: 3}
---- !u!1001 &5641081562804725308
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927733705350623285, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871611967064286869, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
-      propertyPath: m_Name
-      value: MissileLauncher
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
 --- !u!1 &8017792647467316626
 GameObject:
   m_ObjectHideFlags: 0
@@ -16588,5 +16478,3 @@ SceneRoots:
   - {fileID: 2053717011}
   - {fileID: 1930054593}
   - {fileID: 3181670458358121034}
-  - {fileID: 5641081562804725308}
-  - {fileID: 1186239890}
