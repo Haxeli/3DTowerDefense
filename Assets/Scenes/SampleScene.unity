@@ -7194,6 +7194,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1200122148}
     m_Modifications:
+    - target: {fileID: 5077453719071300571, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077453719071300571, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5178498815437886958, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -7212,7 +7220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178498815437886958, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AnotherStandardTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 5178498815437886958, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -7223,16 +7231,20 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 03242798dc681614ebe6ceb6846bc9f3, type: 3}
+    - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.g
-      value: 0.636843
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5600811820071286121, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Color.r
-      value: 0.3915094
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5957947826943357641, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Pivot.x
@@ -7316,7 +7328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283706371154283986, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem (1)
+      value: MissileLauncherItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13036,7 +13048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 3150226524399552052, guid: 261e8184c46c70845b81e209a869728c, type: 3}
-  anotherTurretPrefab: {fileID: 3150226524399552052, guid: 4de84845e7786fa4baf4a23a6a1e15a6, type: 3}
+  missileLauncherPrefab: {fileID: 2871611967064286869, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
 --- !u!1001 &1753587170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16194,6 +16206,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 432c770d2cb67cf438dca6713cf72033, type: 3}
+--- !u!33 &1855031948719710962
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017792647467316626}
+  m_Mesh: {fileID: -4436863061088633788, guid: f2568151874e27a4d9b431d960661dd1, type: 3}
 --- !u!1001 &1928872130903989809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16319,6 +16339,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
+--- !u!4 &3181670458358121034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017792647467316626}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -2.6667972, y: 2.2776315, z: 0.0006128115}
+  m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &3602769020005401455
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8017792647467316626}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &4784090616493887339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16376,6 +16453,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eabaf7e771b490e45b38f6f3e03ac8d3, type: 3}
+--- !u!1 &8017792647467316626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3181670458358121034}
+  - component: {fileID: 1855031948719710962}
+  - component: {fileID: 3602769020005401455}
+  m_Layer: 0
+  m_Name: Missile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -16390,3 +16485,4 @@ SceneRoots:
   - {fileID: 1741696981}
   - {fileID: 2053717011}
   - {fileID: 1930054593}
+  - {fileID: 3181670458358121034}
