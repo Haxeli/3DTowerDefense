@@ -65,4 +65,10 @@ public class Bullet : MonoBehaviour
     {
         Destroy(enemy.gameObject);
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
+    }
 }
