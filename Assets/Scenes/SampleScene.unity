@@ -8888,6 +8888,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd51635ecbc5924b914dd143f6e5b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardTurret:
+    prefab: {fileID: 3150226524399552052, guid: 261e8184c46c70845b81e209a869728c, type: 3}
+    cost: 100
+  missileLauncher:
+    prefab: {fileID: 2871611967064286869, guid: f7747c373adb7ae44979b63a936336a6, type: 3}
+    cost: 300
 --- !u!1 &1205995447
 GameObject:
   m_ObjectHideFlags: 0
@@ -16324,7 +16330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6283706371154283986, guid: 029fed65580218f4b9c0286df45b2870, type: 3}
       propertyPath: m_Name
-      value: ShopTurretItem
+      value: StandardTurretItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
